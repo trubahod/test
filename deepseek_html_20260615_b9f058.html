@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylse.css">
+</head>
+<body>
+    <!-- ========== ШАПКА ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Логотип" width="40" height="40" class="rounded-circle me-2">Название
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#main">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#form">Запись</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== ГЕРОЙ ========== -->
+    <section id="main" style="background: #2c3e50; min-height: 80vh;" class="d-flex align-items-center justify-content-center text-white text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4 animate-on-scroll">Девиз компании</h1>
+            <p class="lead mb-4">краткое описание преимуществ</p>
+            <a href="#form" class="btn btn-success btn-lg px-5 py-3 cta-btn">Записаться на бесплатный урок</a>
+        </div>
+    </section>
+
+    <!-- ========== ПРЕИМУЩЕСТВА ========== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Почему выбирают нас</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-lg advantage-card">
+                        <img src="image.png" alt="Логотип" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mt-3">Опытные педагоги</h3>
+                            <p class="card-text">Квалифицированные преподаватели с опытом работы за рубежом</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-lg advantage-card">
+                        <img src="image.png" alt="Логотип" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mt-3">Гибкий график</h3>
+                            <p class="card-text">Группы 6-8 человек или индивидуальные занятия</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center border-0 shadow-lg advantage-card">
+                        <img src="image.png" alt="Логотип" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="h5 mt-3">Доступные цены</h3>
+                            <p class="card-text">Без скрытых платежей, гибкая система скидок</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== СЛАЙДЕР ========== -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Отзывы клиентов</h2>
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center py-5">
+                                <img src="image.png" alt="Логотип" width="50%" class="me-2">
+                                <p class="fs-4 mt-3">"Преподаватели — настоящие профессионалы."</p>
+                                <h5 class="mt-3">- Анна Иванова</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center py-5">
+                                <img src="image.png" alt="Логотип" width="50%" class="me-2">
+                                <p class="fs-4 mt-3">"Отличный курс! Всё понятно и доступно."</p>
+                                <h5 class="mt-3">- Петр Сидоров</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="card-body text-center py-5">
+                                <img src="image.png" alt="Логотип" width="50%" class="me-2">
+                                <p class="fs-4 mt-3">"Рекомендую всем! Гибкая система оплаты."</p>
+                                <h5 class="mt-3">- Мария Петрова</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== УСЛУГИ ========== -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Наши услуги</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Разговорный английский</h3>
+                            <p class="card-text">Практика речи с носителями языка</p>
+                            <ul class="list-unstyled">
+                                <li>✓ 2 раза в неделю</li>
+                                <li>✓ Группа до 8 человек</li>
+                                <li>✓ от 4000 ₽/мес</li>
+                            </ul>
+                            <a href="#form" class="btn btn-warning btn-sm">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Подготовка к ЕГЭ</h3>
+                            <p class="card-text">Интенсивный курс с репетитором</p>
+                            <ul class="list-unstyled">
+                                <li>✓ 3 раза в неделю</li>
+                                <li>✓ Индивидуально</li>
+                                <li>✓ от 8000 ₽/мес</li>
+                            </ul>
+                            <a href="#form" class="btn btn-warning btn-sm">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== КАЛЬКУЛЯТОР ========== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h2 class="text-center mb-4">Рассчитать стоимость курса</h2>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Выберите язык</label>
+                                <select id="language" class="form-select">
+                                    <option value="english">Английский язык</option>
+                                    <option value="chinese">Китайский язык</option>
+                                    <option value="italian">Итальянский язык</option>
+                                    <option value="spanish">Испанский язык</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Выберите тариф</label>
+                                <select id="tariff" class="form-select">
+                                    <option value="economy">Выгодный</option>
+                                    <option value="comfort">Комфортный</option>
+                                    <option value="premium">Усиленный</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Количество занятий в месяц</label>
+                                <input type="number" id="lessons" class="form-control" value="8" min="8" max="15">
+                                <div class="form-text">от 8 до 15 занятий</div>
+                            </div>
+                            
+                            <div class="alert alert-warning text-center mt-4">
+                                <h3 class="mb-0">Итого: <span id="total-price">0</span> ₽ / месяц</h3>
+                            </div>
+                            <button id="calc-btn" class="btn btn-success w-100 mt-3">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ФОРМА ЗАПИСИ ========== -->
+    <section id="form" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h2 class="text-center mb-4">Записаться</h2>
+                            
+                            <form id="myForm">
+                                <div class="mb-3">
+                                    <input type="text" id="name" class="form-control" placeholder="ФИО" required>
+                                    <div class="invalid-feedback">Только русские буквы и пробелы</div>
+                                </div>
+                        
+                                <div class="mb-3">
+                                    <input type="tel" id="phone" class="form-control" placeholder="89123456789" required>
+                                    <div class="invalid-feedback">Номер: 8 и 11 цифр (89123456789)</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                                    <div class="invalid-feedback">Введите корректный email</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <select id="course" class="form-select" required>
+                                        <option value="">Выберите курс</option>
+                                        <option value="Английский">Английский</option>
+                                        <option value="Немецкий">Немецкий</option>
+                                        <option value="Французский">Французский</option>
+                                    </select>
+                                    <div class="invalid-feedback">Выберите курс</div>
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" id="agree" class="form-check-input" required>
+                                    <label class="form-check-label">Согласие на обработку данных</label>
+                                    <div class="invalid-feedback">Необходимо согласие</div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-warning w-100">Записаться</button>
+                            </form>
+                            
+                            <div id="status" class="mt-3 text-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ПОДВАЛ ========== -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">г. Москва, ул. Примерная, д. 1</div>
+                <div class="col-md-4">+7(999)-123-45-67</div>
+                <div class="col-md-4">info@company.ru</div>
+            </div>
+            <hr class="mt-3">
+            <p class="mb-0">© 2026 Все права защищены</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // ========== КАЛЬКУЛЯТОР ==========
+        const prices = {
+            english: { economy: 500, comfort: 550, premium: 650 },
+            chinese: { economy: 700, comfort: 760, premium: 820 },
+            italian: { economy: 650, comfort: 720, premium: 800 },
+            spanish: { economy: 600, comfort: 700, premium: 780 }
+        };
+
+        function calculatePrice() {
+            const language = document.getElementById('language').value;
+            const tariff = document.getElementById('tariff').value;
+            const lessons = parseInt(document.getElementById('lessons').value);
+            
+            if (isNaN(lessons) || lessons < 8 || lessons > 15) {
+                document.getElementById('total-price').textContent = '0';
+                return;
+            }
+            
+            const pricePerLesson = prices[language][tariff];
+            const total = pricePerLesson * lessons;
+            document.getElementById('total-price').textContent = total;
+        }
+
+        document.getElementById('calc-btn').addEventListener('click', calculatePrice);
+        calculatePrice(); // запуск при загрузке
+    </script>
+
+    <script>
+        // ========== ФОРМА С ОТПРАВКОЙ В БД ==========
+        document.getElementById('myForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Валидация имени
+            const name = document.getElementById('name');
+            const nameOk = /^[А-Яа-яЁё\s]+$/.test(name.value.trim());
+            name.classList.toggle('is-invalid', !nameOk);
+            
+            // Валидация телефона (ИСПРАВЛЕНО: id="phone")
+            const phone = document.getElementById('phone');
+            const phoneOk = /^8\d{10}$/.test(phone.value.trim());
+            phone.classList.toggle('is-invalid', !phoneOk);
+            
+            // Валидация курса
+            const course = document.getElementById('course');
+            const courseOk = course.value !== "";
+            course.classList.toggle('is-invalid', !courseOk);
+            
+            // Валидация чекбокса
+            const agree = document.getElementById('agree');
+            const agreeOk = agree.checked;
+            agree.classList.toggle('is-invalid', !agreeOk);
+            
+            // Если есть ошибки — не отправляем
+            if (!(nameOk && phoneOk && courseOk && agreeOk)) return;
+            
+            // Отправка на сервер
+            const formData = new FormData();
+            formData.append('name', name.value.trim());
+            formData.append('phone', phone.value.trim());
+            formData.append('email', document.getElementById('email').value.trim());
+            formData.append('course', course.value);
+            
+            try {
+                const response = await fetch('save.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const text = await response.text();
+                
+                if (text === 'success') {
+                    document.getElementById('status').innerHTML = '<div class="alert alert-success">✅ Заявка отправлена в БД!</div>';
+                    document.getElementById('myForm').reset();
+                } else {
+                    document.getElementById('status').innerHTML = '<div class="alert alert-danger">❌ Ошибка: ' + text + '</div>';
+                }
+            } catch (error) {
+                document.getElementById('status').innerHTML = '<div class="alert alert-danger">❌ Ошибка сервера</div>';
+            }
+            
+            setTimeout(() => {
+                document.getElementById('status').innerHTML = '';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
